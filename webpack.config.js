@@ -2,7 +2,8 @@ module.exports = [
      {
         entry: {
             "link-calendar": "./app/components/link-calendar.vue",
-            "calendar": "./app/components/calendar.vue"
+            "calendar": "./app/components/calendar.vue",
+            "widget-upcoming-events": "./app/components/widget-upcoming-events.vue"
         },
         output: {
             filename: "./app/bundle/[name].js"

@@ -111,6 +111,16 @@
             'view.scripts' => function ($event, $scripts) {
                 $scripts->register('calendar-link', 'calendar:app/bundle/link-calendar.js', '~panel-link');
             },
-
-        ]
+			'view.system/widget/edit' => function ($event, $view) {
+				$view->script('widget-upcoming-events', 'theme:app/bundle/widget-upcoming-events.js', 'widget-edit');
+			}
+        ],
+		
+		'widgets' => [
+			'widgets/upcoming-events.php'
+		],
+		
+		'widget' => [
+			'num-display' => '4'
+		]
     ];
